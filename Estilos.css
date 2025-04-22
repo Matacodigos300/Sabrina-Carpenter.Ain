@@ -1,0 +1,87 @@
+ .musica{
+    background-color: #f1e8e8;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 0;
+    inline-size: center;
+ }
+ 
+header h1{
+    background-color: #c262a5;
+    font-size: 60px;
+    color: #f1e8e8;
+    padding: 2%;
+    text-align: center;
+
+}  
+
+.contenedor-principal {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;/*centrado*/
+    gap: 20px; /* Espaciado*/
+    padding: 20px; /* Espaciado interno*/
+}
+
+.contenedor {
+    background-color: rgb(255, 255, 255); 
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(221, 42, 42, 0.2); /* Sombra con tono rojo claro */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    width: 300px; /* Ancho fijo */
+    transition: transform 0.3s ease;
+}
+.contenedor:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al pasar el mouse */
+}
+
+h1 {
+    font-size: 24px; /* Tamaño grande para el título */
+    color: #333; /* Color de texto gris oscuro */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+p {
+    font-size: 14px; /* Tamaño del texto del párrafo */
+    color: #666; /* Color gris claro */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.contenedor img {
+    width: 100px; /* Ancho de la imagen */
+    height: 100px; /* Altura de la imagen */
+    border-radius: 50%; /* Hace la imagen circular */
+    margin-bottom: 15px; /* Espaciado inferior */
+    transition: transform 0.3s ease;
+}
+.contenedor img:hover {
+    transform: scale(1.5); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+
+.boton-reproducir-pausar {
+    width: 60px;
+    height: 60px;
+    color: rgb(201, 9, 159);
+    border-radius: 50%;
+    border: 2px solid var(--blanco);
+    outline: none;
+    font-size: 2rem;
+    box-shadow: 0 8px 12px rgba(141, 9, 182, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.contenedor button:hover {
+    background-color: #ce50b53b;
+    transform: scale(1.5);
+}
+.controles button:hover {
+    transform: scale(1.2);
+}
+
+.iconoControl {
+    transform: scale(1.15);
+}
+
+
+
+

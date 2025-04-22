@@ -1,0 +1,130 @@
+/* Barra de navegación (puedes personalizarla con enlaces) */
+  .nav {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Estilo de cada enlace de la navegación */
+  .nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    background: #555;
+    border-radius: 6px;
+    transition: background 0.3s;
+  }
+
+  /* Cambia el color al pasar el mouse */
+  .nav a:hover {
+    background: #777;
+  }
+
+  /* Contenedor del buscador */
+  .search {
+    position: relative; /* Necesario para posicionar elementos hijos */
+    width: 45px; /* Tamaño cerrado */
+    height: 45px;
+    margin: auto;
+    transition: width 0.5s ease;
+  }
+
+  /* Cuando se activa el buscador se expande */
+  .search.active {
+    width: 300px; /* Ancho del buscador expandido */
+  }
+
+  /* Estilo del input (campo de texto) */
+  .search input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 45px 10px 20px;
+    border: 3px solid #9a86fb;
+    border-radius: 35px;
+    background: #fff;
+    color: #000;
+    font-size: 18px;
+    outline: none;
+    opacity: 0; /* Oculto inicialmente */
+    pointer-events: none; /* No se puede escribir aún */
+    transition: opacity 0.5s;
+  }
+
+  /* Cuando el buscador está activo se puede usar el input */
+  .search.active input {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* Botón de la lupa */
+  .search button {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #960b96;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Caja de resultados de búsqueda */
+  .content-table {
+    width: 100%; /* Asegúrate de que ocupe todo el ancho del buscador */
+    max-width: 300px; /* Limita el ancho máximo al del buscador expandido */
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none; /* Oculto por defecto */
+    position: absolute; /* Posiciona relativo al contenedor padre */
+    top: calc(100% + 0px); /* Justo al ras del borde inferior del buscador */
+    z-index: 2;
+    box-sizing: border-box; /* Asegura que padding y border no afecten el ancho */
+    padding: 0; /* Elimina cualquier padding que pueda desalinear */
+    margin: 0; /* Elimina cualquier margen que pueda desalinear */
+    margin-left: 150px;
+
+  }
+
+  /* Estilo de la tabla */
+  .content-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  /* Estilo de cada enlace de resultado */
+  .content-table td a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+  }
+
+  /* Efecto al pasar el mouse sobre un resultado */
+  .content-table td a:hover {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  /* Mensaje cuando no hay resultados */
+  #no-results {
+    text-align: center;
+    color: red;
+    padding: 15px;
+    display: none;
+    background-color: #fff;
+  }

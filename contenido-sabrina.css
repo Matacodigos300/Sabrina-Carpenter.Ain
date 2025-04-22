@@ -1,0 +1,81 @@
+/* Sección principal con imagen de fondo */
+.header {
+    height: 100vh;
+    background: url('sabrina.webp') no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 20px 20px; /* Ajustamos el padding para bajar el texto */
+    text-align: center;
+    
+}
+/* Título principal centrado y llamativo */
+.title {
+    margin-top: 50px; /* Bajamos un poco el título */
+    font-size: 70px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 5px 6px 0px rgba(0, 0, 0, 0.5); /* Sombra para mayor legibilidad */
+}
+
+.inicio{
+    font-size: 30px;
+    margin: auto;
+    color: white;
+    text-shadow: 5px 0px 0px rgba(0, 0, 0, 0.5); /* Sombra para mayor legibilidad */}
+  
+    .btn {
+    margin-top: -2000px; /* sube 20 píxeles hacia arriba */
+    padding: 15px 30px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(135deg, #ff66b2, #ffa6d6);
+    font-size: 20px;
+    font-family: 'Segoe UI', 'Arial Rounded MT Bold', cursive;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(255, 102, 178, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.5); /* Sombra para mayor legibilidad */
+}
+
+
+/* Efecto brillante al pasar el mouse */
+.btn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+}
+
+.btn:hover::before {
+    top: -10%;
+    left: -10%;
+    animation: shine 0.7s forwards;
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(100%) rotate(45deg);
+    }
+}
+
+/* Cambia el color y sombra al hacer hover */
+.btn:hover {
+    background: linear-gradient(135deg, #e94e9f, #ff84c4);
+    box-shadow: 0 10px 25px rgba(233, 78, 159, 0.6);
+}
