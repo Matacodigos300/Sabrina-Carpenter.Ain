@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musica de SC</title>
+    <link rel="stylesheet" href="Estilos.css">
+    <link rel="stylesheet" href="Estilos-de-las-Barra.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="Barra-principal.css">
+    <link rel="stylesheet" href="barra-de-busqueda.css">
+</head>
+<body>
+
+    <div class="head">    
+        <img class="logo" src="Logo.png" alt="Logo de Sabrina">
+    
+     <!-- Buscador -->
+     <div class="search" id="searchBox">
+      <!-- Campo de texto -->
+      <input type="text" placeholder="Buscar..." id="searchInput">
+      <!-- Botón de búsqueda -->
+      <button id="searchBtn"><i class="fas fa-search"></i></button>
+    </div>
+    
+    <!-- Resultados filtrados -->
+    <div class="content-table" id="resultsBox">
+      <table id="table">
+        <tbody>
+        <tr><td><a href="#">Inicio</a></td></tr>
+        <tr><td><a href="#">Discografía</a></td></tr>
+        <tr><td><a href="#">Álbum "Emails I Can't Send"</a></td></tr>
+        <tr><td><a href="#">Álbum "Singular Act I"</a></td></tr>
+        <tr><td><a href="#">Álbum "Singular Act II"</a></td></tr>
+        <tr><td><a href="#">Nuevos Lanzamientos</a></td></tr>
+        <tr><td><a href="#">Videos Musicales</a></td></tr>
+        <tr><td><a href="#">Letra de Canciones</a></td></tr>
+        <tr><td><a href="#">Gira Mundial</a></td></tr>
+        <tr><td><a href="#">Galería de Fotos</a></td></tr>
+        <tr><td><a href="#">Estilo y Moda</a></td></tr>
+        <tr><td><a href="#">Biografía</a></td></tr>
+        <tr><td><a href="#">Noticias y Entrevistas</a></td></tr>
+        <tr><td><a href="#">Fans y Comunidad</a></td></tr>
+        </tbody>
+      </table>
+      <!-- Mensaje si no hay coincidencias -->
+      <div id="no-results">No se encontraron resultados.</div>
+    </div>
+    <script src="buscador-interactividad.js"></script>
+    
+        <nav class="navbar">
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <ul>
+            <li><a href="Sabrina_Carpenter.html">Sabrina Carpenter</a></li>
+            <li><a href="Canciones.html">Canciones</a></li>
+            <li><a href="Premios.html">Premios</a></li>
+            <li><a href="Exitos.html">Éxitos</a></li>
+            <li><a href="Fotos.html">Fotos</a></li>
+            <li><a href="Bestuarios.html">Vestuario</a></li>
+          </ul>
+        </nav>
+      </div>
+    
+
+
+    <header>
+        <H1>Musica de Sabrina Carpenter</H1>
+    </header>
+
+
+    
+
+    <div class="contenedor-principal">
+        <div class="contenedor">
+        <h1>Espresso</h1>
+        <p>Sabrina Carpenter</p>
+        <img src="img/sc.jpg" alt=""> 
+        <audio id="cancion-espresso">
+            <source src="Sabrina Carpenter Espresso.mp3" type="audio/mpeg"/>
+        </audio>  
+        <input type="range" value="0" id="progreso-espresso"/>
+        <button class="boton-reproducir-pausar iconoControl" id="boton-espresso">
+            <i class="bi bi-play-fill" id="iconoControl-espresso"></i>
+          </button>
+    </div>
+
+    <div class="contenedor">
+        <h1>Nonsense</h1>
+        <p>Sabrina Carpenter</p>
+        <img src="img/sc20.jpg" alt="">
+        <audio id="cancion-nonsense">
+        <source src="Sabrina Carpenter Nonsense.mp3" type="audio/mpeg"/>
+        </audio>  
+        <input type="range" value="0" id="progreso-nonsense"/>
+        
+        <button class="boton-reproducir-pausar iconoControl" id="boton-nonsense">
+            <i class="bi bi-play-fill" id="iconoControl-nonsense"></i>
+          </button>    </div>
+
+    <div class="contenedor">
+        <h1>Busy Woman</h1>
+        <p>Sabrina Carpenter</p>
+        <img src="img/sc6.jpg" alt="">
+        <audio id="cancion-busy-woman">
+            <source src="Sabrina Carpenter Busy Woman.mp3" type="audio/mpeg"/>
+        </audio>  
+        <input type="range" value="0" id="progreso-busy-woman"/>
+
+        <button class="boton-reproducir-pausar iconoControl" id="boton-busy-woman">
+            <i class="bi bi-play-fill" id="iconoControl-busy-woman"></i>
+          </button>
+    </div>
+
+    <div class="contenedor">
+        <h1>Feather</h1>
+        <p>Sabrina Carpenter</p>
+        <img src="img/sc10.jpg" alt="">
+        <audio id="cancion-feather">
+            <source src="Sabrina Carpenter  Feather.mp3" type="audio/mpeg"/>
+        </audio>  
+        <input type="range" value="0" id="progreso-feather"/>
+        
+        <button class="boton-reproducir-pausar iconoControl"id="boton-feather">
+            <i class="bi bi-play-fill" id="iconoControl-feather"></i>
+          </button>
+    </div>
+
+    <div class="contenedor">
+        <h1>Juno</h1>
+        <p>Sabrina Carpenter</p>
+        <img src="img/sc19.jpg" alt="">
+        <audio id="cancion-juno">
+            <source src="Sabrina Carpenter Juno.mp3" type="audio/mpeg"/>
+        </audio>  
+        <input type="range" value="0" id="progreso-juno"/>
+        
+        <button class="boton-reproducir-pausar iconoControl" id="boton-juno">
+            <i class="bi bi-play-fill" id="iconoControl-juno"></i>
+          </button>
+    </div>
+
+    
+
+    <div class="contenedor">
+        <h1>Taste</h1>
+        <p>Sabrina Carpenter</p>
+        <img src="img/sc7.jpg" alt="">
+        <audio id="cancion-taste">
+            <source src="Sabrina Carpenter Taste.mp3" type="audio/mpeg"/>
+        </audio>  
+        <input type="range" value="0" id="progreso-taste"/>
+        
+        <button class="boton-reproducir-pausar iconoControl" id="boton-taste">
+            <i class="bi bi-play-fill" id="iconoControl-taste"></i>
+          </button>   
+    </div>
+
+
+         <div class="contenedor">
+            <h1>Bed Chem</h1>
+            <p>Sabrina Carpenter</p>
+            <img src="sc17.jpg" alt="">
+            <audio id="cancion-Bed-Chem">
+                <source src="Sabrina Carpenter Bed Chem.mp3" type="audio/mpeg"/>
+            </audio>  
+            <input type="range" value="0" id="progreso-Bed-Chem"/>
+            
+            <button class="boton-reproducir-pausar iconoControl" id="boton-Bed-Chem">
+                <i class="bi bi-play-fill" id="iconoControl-Bed-Chem"></i>
+              </button>   
+             </div>
+             <div class="contenedor">
+                <h1>15 Minutes</h1>
+                <p>Sabrina Carpenter</p>
+                <img src="sc14.jpg" alt="">
+                <audio id="cancion-15-Minutes" >
+                    <source src="Sabrina Carpenter 15 Minutes.mp3" type="audio/mpeg"/>
+                </audio>  
+                <input type="range" value="0" id="progreso-15-Minutes"/>
+                
+                <button class="boton-reproducir-pausar iconoControl" id="boton-15-Minutes">
+                    <i class="bi bi-play-fill" id="iconoControl-15-Minutes"></i>
+                  </button>   
+                 </div>
+    
+            <div class="contenedor">
+                <h1>Cloudt't Make It Any Herder</h1>
+                <p>Sabrina Carpenter</p>
+                <img src="sc5.jpg" alt="">
+                <audio id="cancion-cloudt">
+                    <source src="Sabrina Carpenter Cloudt't Make It Any Herder.mp3" type="audio/mpeg"/>
+                </audio>  
+                <input type="range" value="0" id="progreso-cloudt"/>
+                
+                <button class="boton-reproducir-pausar iconoControl" id="boton-cloudt">
+                    <i class="bi bi-play-fill" id="iconoControl-cloudt"></i>
+                  </button>   
+                 </div>
+    
+    
+            <div class="contenedor">
+                <h1>Please Please Please</h1>
+                <p>Sabrina Carpenter</p>
+                <img src="sc9.jpg" alt="">
+                <audio id="cancion-Please">
+                    <source src="Sabrina Carpenter Please Please Please.mp3" type="audio/mpeg"/>
+                </audio>  
+                <input type="range" value="0" id="progreso-Please"/>
+                
+                <button class="boton-reproducir-pausar iconoControl" id="boton-Please">
+                    <i class="bi bi-play-fill" id="iconoControl-Please"></i>
+                  </button>   
+                 </div>
+        </div>
+
+
+ <script src="Reproductor.js"></script>
+
+        
+
+</body>
+</html>

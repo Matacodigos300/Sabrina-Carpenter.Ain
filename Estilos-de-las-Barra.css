@@ -1,0 +1,116 @@
+#progreso-espresso, #progreso-nonsense ,#progreso-busy-woman ,#progreso-feather
+,#progreso-feather,#progreso-juno,#progreso-taste,#progreso-Bed-Chem,#progreso-cloudt,#progreso-15-Minutes,#progreso-Please{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: rgba(206, 29, 206, 0.4);
+    border-radius: 10px;
+    margin: 35px 0 25px;
+    cursor: pointer;
+}
+
+#progreso-espresso::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    background: rgba(196, 43, 226, 0.9);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 5px solid var(--blanco);
+    box-shadow: 0 6px 12px rgba(240, 5, 220, 0.3);
+}
+
+#progreso-nonsense::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    background: rgba(196, 43, 226, 0.9);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 5px solid var(--blanco);
+    box-shadow: 0 6px 12px rgba(240, 5, 220, 0.3);
+}
+
+#progreso-busy-woman::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    background: rgba(196, 43, 226, 0.9);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 5px solid var(--blanco);
+    box-shadow: 0 6px 12px rgba(240, 5, 220, 0.3);
+}
+#progreso-feather::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    background: rgba(196, 43, 226, 0.9);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 5px solid var(--blanco);
+    box-shadow: 0 6px 12px rgba(240, 5, 220, 0.3);
+}
+#progreso-juno::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    background: rgba(196, 43, 226, 0.9);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 5px solid var(--blanco);
+    box-shadow: 0 6px 12px rgba(240, 5, 220, 0.3);
+}
+#progreso-taste::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    background: rgba(196, 43, 226, 0.9);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 5px solid var(--blanco);
+    box-shadow: 0 6px 12px rgba(240, 5, 220, 0.3);
+}
+#progreso-Bed-Chem::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    background: rgba(196, 43, 226, 0.9);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 5px solid var(--blanco);
+    box-shadow: 0 6px 12px rgba(240, 5, 220, 0.3);
+}
+#progreso-15-Minutes::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    background: rgba(196, 43, 226, 0.9);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 5px solid var(--blanco);
+    box-shadow: 0 6px 12px rgba(240, 5, 220, 0.3);
+}
+
+#progreso-cloudt::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    background: rgba(196, 43, 226, 0.9);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 5px solid var(--blanco);
+    box-shadow: 0 6px 12px rgba(240, 5, 220, 0.3);
+}
+
+#progreso-Please::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    background: rgba(196, 43, 226, 0.9);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 5px solid var(--blanco);
+    box-shadow: 0 6px 12px rgba(240, 5, 220, 0.3);
+}
